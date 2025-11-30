@@ -3,11 +3,9 @@ name = "hexlet-code"
 version = "0.1.0"
 description = ""
 authors = [
-    { name = "Mike", email = "mishkamn2000@gmail.com" },
+    { name = "Your Name", email = "your@email.com" },
 ]
-dependencies = [
-    "prompt>=0.4.1",
-]
+dependencies = ["prompt"]
 requires-python = ">=3.10"
 
 [build-system]
@@ -19,3 +17,13 @@ packages = ["brain_games"]
 
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
+
+[tool.ruff]
+line-length = 80
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F401"]
+
+[tool.ruff.lint]
+preview = true
+select = ["E", "F", "I", "C90"]
