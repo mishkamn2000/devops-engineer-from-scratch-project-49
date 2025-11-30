@@ -5,7 +5,9 @@ description = ""
 authors = [
     { name = "Mike", email = "mishkamn2000@gmail.com" },
 ]
-dependencies = []
+dependencies = [
+    "prompt>=0.4.1",
+]
 requires-python = ">=3.10"
 
 [build-system]
